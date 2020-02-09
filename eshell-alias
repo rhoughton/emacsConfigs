@@ -1,4 +1,4 @@
-alias l ls -1a
+alias la ls -1a
 alias gap git add -p
 alias g git
 alias ga git add
@@ -13,3 +13,27 @@ alias gl git pull
 alias gss git status -s
 alias mgs magit-status
 alias ll ls -halF
+alias rm rm -i
+
+Some ppl suggest this:
+# echo "alias ll='ls -l'" >> /etc/bash.bashrc
+
+but I like have a file dedicated to alias so: echo "alias ls="ls -a" >>
+/etc/bash_aliases but now on second thought, 2 reasons not to do it this way
+first, if I put it in my bashrc file I'll be forced to look at that if I want to
+browse through my aliases, and second, remembering the plural form of aliases
+gives me pause, and any pause on spelling is time away from being productive!
+Booo spelling! Also, I just checked by default Ubu sys and since there isn't one
+to begin with, eh, why shake the boat.
+
+something else to consider: If your user's $HOME/.bashrc contains the usual
+
+if [ -f /etc/bashrc ]; then . /etc/bashrc fi Then put it in /etc/bashrc. If it
+        doesn't then put it in /etc/profile from where it will at least be read
+        for login shells Also, since we're on the topic of alias, something like
+        an alias is keybindings and here is some helpful info: You could map it
+        to a key, for instance F3, in .vimrc inoremap <F3> <Esc>GA For me, b/c
+        you can c-shift-c/v in vi via the terminal I'm going to set that here.
+
+I like this file, and since I have so many aliases I've changed my mind yet again and went with bash_alias
+ 
