@@ -1,10 +1,7 @@
-  ;; This file is loaded by Spacemacs at startup.
+;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
 
 (defun dotspacemacs/layers ()
-  "Configuration Layers declaration.
-You should not put any user code in this function besides modifying the variable
-values."
   (setq-default
    ;; Base distribution to use. This is a layer contained in the directory
    ;; `+distribution'. For now available distributions are `spacemacs-base'
@@ -22,12 +19,7 @@ values."
      python
      html
      ruby
-     shell-scripts
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
+     shell-scripts-
      auto-completion
      better-defaults
      emacs-lisp
@@ -40,10 +32,10 @@ values."
             shell-default-shell 'ansi-shell
             shell-default-height 30
             shell-default-position 'bottom)
-     spell-checking
+     ;;spell-checking
      syntax-checking
      version-control
-     osx
+     ;;osx
      shell
      c-c++
      (c-c++ :variables c-c++-enable-clang-support t)
@@ -86,7 +78,7 @@ values."
    ;; variable is `emacs' then the `holy-mode' is enabled at startup. `hybrid'
    ;; uses emacs key bindings for vim's insert mode, but otherwise leaves evil
    ;; unchanged. (default 'vim)
-   dotspacemacs-editing-style 'vim
+   dotspacemacs-editing-style 'hybrid
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -355,7 +347,6 @@ you should place your code here."
                                           persp-names-cache)))
                     (setq persp-names-cache
                           (cons (safe-persp-name persp) persp-names-cache))))))
-  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
