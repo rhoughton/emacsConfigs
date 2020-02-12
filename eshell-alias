@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 alias la ls -1a
+=======
+alias l ls -1a
+>>>>>>> 8b363749b74cff4a81f852e910f6a373f0fb7dbf
 alias gap git add -p
 alias g git
 alias ga git add
@@ -13,6 +17,7 @@ alias gl git pull
 alias gss git status -s
 alias mgs magit-status
 alias ll ls -halF
+<<<<<<< HEAD
 alias rm rm -i
 
 Some ppl suggest this:
@@ -37,3 +42,5 @@ if [ -f /etc/bashrc ]; then . /etc/bashrc fi Then put it in /etc/bashrc. If it
 
 I like this file, and since I have so many aliases I've changed my mind yet again and went with bash_alias
  
+=======
+>>>>>>> 8b363749b74cff4a81f852e910f6a373f0fb7dbf
