@@ -1,7 +1,8 @@
--shift right arrow to change the line todo
--alt arrow to change type of heading
-alt ret for new heading
+shift right arrow to change the line todo
+m- arrow to change type of heading
+m-ret for new heading
 c-c . for timestamp
 c-c c-, to add code block
+spc f s to save, capital S to save all buffers
 
 https://gist.github.com/heroheman/befa66b5b4dc5d94682206ece4a91a18 
