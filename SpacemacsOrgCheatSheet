@@ -1,3 +1,5 @@
 -shift right arrow to change the line todo
 -alt arrow to change type of heading
-alt ret for new heading 
+alt ret for new heading
+c-c . for timestamp
+c-c c-, to add code block
