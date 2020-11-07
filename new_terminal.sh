@@ -20,3 +20,7 @@ CYAN='\[\033[1;36m\]'
 NC='\[\033[0m\]'
 
 PS1="$yellow[$CYAN\t$yellow][$red\u@\h$yellow][$GREEN\w$grey$yellow]$NC# "
+#on ubuntu I had trouble "exec .bashrc" so instead ". ~/.bashrc" and it worked
+#new and improved PS1:
+PS1="$yellow[$CYAN\A$yellow][$PURPLE\D{%m.%d}$yellow][$GREEN\w$grey$yellow]$NC# "
+
